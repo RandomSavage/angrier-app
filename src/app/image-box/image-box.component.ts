@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageBoxService } from './image-box.service';
+import { GetDataService} from './get-data.service';
 
 @Component({
   selector: 'app-image-box',
@@ -8,7 +8,7 @@ import { ImageBoxService } from './image-box.service';
 })
 export class ImageBoxComponent implements OnInit {
   characters;
-  constructor(service: ImageBoxService) { 
+  constructor(service: GetDataService) { 
     this.characters = service.getCharacters();
   }
 

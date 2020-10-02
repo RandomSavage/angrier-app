@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './image-box/title/title.component';
-import { ImageBoxService } from './image-box/image-box.service';
+import { GetDataService } from './image-box/get-data.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ImageBoxService } from './image-box/image-box.service';
     AppRoutingModule  
   ],
   providers: [
-    ImageBoxService
+    GetDataService
   ],
   bootstrap: [AppComponent]
 })

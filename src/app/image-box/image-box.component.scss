@@ -1,28 +1,31 @@
 #image-box{
   width: 100%;
   max-width: 600px;
-  background: black;
-  padding: 15px;
+  background: #1b1b1b;
+  padding: 10px;
   border-radius: 5px;
   display: flex;
   h3{
-    color: #fff;
+    color: #1b1b1b;
   }
   img{
     width: 100%;
   }
   .left{
-    background: darkgray;
+    background: #fff;
     width: 100%;
     max-width: 300px;
     padding: 10px;
   }
   .right{
-    background: gray;
+    background: #f5f7fa;
     padding: 20px;
     width: 300px;
     h3{
       text-align: center;
+    }
+    ul{
+      
     }
     li{
       padding: 5px;
