@@ -1,3 +1,4 @@
+import { ImageBoxComponent } from './image-box.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,11 +7,12 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ImageBoxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
