@@ -2,16 +2,16 @@ export class ImageBoxService{
   getCharacters(){
     return [
       {
-        name: 'Goku',
+        name: 'Mad Kitty',
         planet: 'Earth'
       },
       {
-        name: 'Vegeta',
-        planet: 'Vegeta'
+        name: 'Billy',
+        planet: 'Earth'
       },
       {
-        name: 'Picolo',
-        planet: 'Namek'
+        name: 'Cindy',
+        planet: 'Earth'
       }
     ];
   }
