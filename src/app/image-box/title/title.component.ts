@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
-
+  title = 'Angrier-App';
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  printTitle(){
+    return `Mad Kitty from The ${this.title}`;
+  }
 }
