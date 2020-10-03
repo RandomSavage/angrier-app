@@ -5,13 +5,33 @@
   </div>
   <div class="right">
     <h3>Characters</h3>
-    <ul>
+    <ul *ngIf="characters.length > 0">
       <li *ngFor="let character of characters">Name: {{character.name}} <br>
         Planet: {{character.planet}}
       </li>
+    </ul>
+    <ul *ngIf="characters.length == 0">
+      <li>Sorry, No Characters Available</li>
     </ul>
   </div>
 </div>
 
 
 <!-- <h3>{{characters[1].name}}</h3> -->
+
+<!-- //2nd *ngIf tactic
+
+<div *ngIf="characters.length > 0 ; then showCharacters else showNoCharacters">
+  <ng-template #showCharacters>
+    <ul>
+      <li *ngFor="let character of characters">Name: {{character.name}} <br>
+        Planet: {{character.planet}}
+      </li>
+    </ul>
+  </ng-template>
+  <ng-template #showNoCharacters>
+    <ul>
+      <li>Sorry, No Characters Available</li>
+    </ul>
+  </ng-template>
+</div> -->
