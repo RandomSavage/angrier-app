@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './image-box/title/title.component';
 import { GetDataService } from './image-box/get-data.service';
+import { TabsComponentComponent } from './tabs-component/tabs-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageBoxComponent,
-    TitleComponent
+    TitleComponent,
+    TabsComponentComponent
   ],
   imports: [
     BrowserModule,

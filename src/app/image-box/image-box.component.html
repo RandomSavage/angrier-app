@@ -35,3 +35,32 @@
     </ul>
   </ng-template>
 </div> -->
+
+<div [ngSwitch]="characters.length">
+  <ul *ngSwitchCase="3">
+    <li *ngFor="let character of characters">Name: {{character.name}} <br>
+      Planet: {{character.planet}}
+    </li>
+  </ul>
+  <ul *ngSwitchCase="2">
+    <li>
+      Need to have three in order to show in the view, you have two
+    </li>
+  </ul>
+  <ul *ngSwitchCase="1">
+    <li>
+      There is only one character
+    </li>
+  </ul>
+  <ul *ngSwitchCase="0">
+    <li>
+      Sorry, No Characters Available
+    </li>
+  </ul>
+  <ul *ngSwitchDefault>
+    <li>
+      To many characters to show on the view
+    </li>
+  </ul>
+</div>
+
