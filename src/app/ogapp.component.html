@@ -10,7 +10,10 @@
 <!-- <app-image-box></app-image-box> -->
 <!-- <app-tabs-component></app-tabs-component> -->
 <div class="testing-box">
-  <master-button [type]="'primary'" [title]="'primary'" (alertTypeTrigger)="alertType($event)"></master-button>
+  <master-button [alertType]="alertType" [type]="'primary'" [title]="'save'"></master-button>
+  <master-button [alertType]="alertType"  [type]="'danger'" [title]="'delete'"></master-button>
+  <master-button [alertType]="alertType"  [type]="'warning'" [title]="'warning'"></master-button>
+  <master-button [alertType]="alertType"  [type]="'success'" [title]="'success'"></master-button>
 </div>
 <!-- <router-outlet></router-outlet> -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angrier-app';
+  alertType(type: string){
+    alert(type);
+  }
 }

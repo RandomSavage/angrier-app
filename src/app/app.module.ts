@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './image-box/title/title.component';
 import { GetDataService } from './image-box/get-data.service';
 import { TabsComponentComponent } from './tabs-component/tabs-component.component';
+import { MasterButtonComponent } from './master-button/master-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageBoxComponent,
     TitleComponent,
-    TabsComponentComponent
+    TabsComponentComponent,
+    MasterButtonComponent
   ],
   imports: [
     BrowserModule,

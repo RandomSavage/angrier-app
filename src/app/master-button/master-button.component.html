@@ -1,0 +1,63 @@
+<div id="master-button" (click)="clickedButton(type)" [ngClass]="{
+  'primary': type == 'primary',
+  'danger': type == 'danger',
+  'warning': type == 'warning',
+  'success': type == 'success'
+}">{{title}}</div>
+
+
+<!-- ng-content way: -->
+
+<!-- <div id="master-button" (click)="alertType(type)" [ngClass]="{
+  'primary': type == 'primary',
+  'danger': type == 'danger',
+  'warning': type == 'warning',
+  'success': type == 'success'
+}"><ngContent></ngContent></div>
+
+For the above div we just place the title like a regular button inside our app.component.html:
+<master-button [alertType]="alertType" [type]="'primary'">Save</master-button>
+kinda boring though... right? -->
+
+<!-- <div id="master-button" (click)="alertType(type)" [ngClass]="{
+  'primary': type == 'primary',
+  'danger': type == 'danger',
+  'warning': type == 'warning',
+  'success': type == 'success'
+}">
+<ngContent select=".subheader"></ngContent>
+<ngContent select=".title"></ngContent>
+</div>
+
+For the above div we can  add multiple html tags and then select the order in which they appear inside our app.component.html:
+<master-button [alertType]="alertType" [type]="'primary'">
+  <h1 class="title">save</h1>
+  <p class="subheader">subheader</p>
+</master-button>
+A little more interesting... right? -->
+
+<!-- <div id="master-button" (click)="alertType(type)" [ngClass]="{
+  'primary': type == 'primary',
+  'danger': type == 'danger',
+  'warning': type == 'warning',
+  'success': type == 'success'
+}">
+  <h5>
+    <ngContent select=".subheader"></ngContent>
+  </h5>
+  <h1>
+    <ngContent select=".title"></ngContent>
+  </h1>
+</div>
+
+By wrapping our content in a ngContainer inside our app.component.html we can dictate the type of html tag that appears inside our component html and set its ngContent:
+<master-button [alertType]="alertType" [type]="'primary'">
+  <ngContainer class="title">save</ngContainer>
+  <ngContainer class="subheader">subheader</ngContainer>
+</master-button>
+eh potatoes potautos maybe a little better... right? -->
+
+<!-- overide styles from an angular omponent in the app.component.html:
+inside your components .ts file import viewEncapsulation
+add it in the @component method :
+encapsulation: viewEncapsulation.None  [Emulated,Native,None,ShadowDom,] None you can overwrite, Emulated works on old browsers so is default. -->

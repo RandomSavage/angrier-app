@@ -1,1 +1,8 @@
 // @import "./tabs-component/tabs-component.component.scss";
+.testing-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
